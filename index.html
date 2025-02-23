@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Se o Rock fosse uma Fruta</title>
+  </head>
+  <body>
+    <h1>Escute a música "Se o Rock fosse uma fruta"</h1>
+
+    <!-- Reprodutor de áudio -->
+    <audio id="audioPlayer" controls>
+      <source src="assets/SeRockFosseUmaFruta.mp3" type="audio/mp3" />
+      Seu navegador não suporta o formato de áudio.
+    </audio>
+
+    <!-- Botão para tocar a música via JavaScript -->
+    <button onclick="playMusic()">Tocar Música</button>
+
+    <script>
+      function playMusic() {
+        const audio = document.getElementById("audioPlayer");
+        audio.play(); // Toca a música quando o botão é clicado
+      }
+    </script>
+  </body>
+</html>
